@@ -21,6 +21,19 @@ _BANS: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("flood_warning", re.compile(r"\bflood warning\b|\bemergency forecast\b", re.I)),
     ("flood_ai", re.compile(r"\bflood AI\b", re.I)),
     ("mix_column", re.compile(r"\bmix(?:ed|ing)? AnA with v2\.1\b", re.I)),
+    ("nwm_now_wins", re.compile(r"\bNWM now wins\b", re.I)),
+    ("got_good", re.compile(r"\bgot good in 2025\b", re.I)),
+    (
+        "ana_as_forecast",
+        re.compile(
+            r"\bAnA is (?:a |the )?(?:flood )?forecast\b|"
+            r"\btm00 is (?:a |the )?forecast\b|"
+            r"\bcaptioned as a forecast\b",
+            re.I,
+        ),
+    ),
+    ("medium_range_caption", re.compile(r"\bmedium-range\b", re.I)),
+    ("ana_vs_v21_nora", re.compile(r"\b301\b.{0,24}1,316|1,316.{0,24}\b301\b")),
 )
 
 

@@ -6,4 +6,5 @@
 4. README AnA table matches `logs/live/stage_c_report.json`. No v2.1 RMSE cells in that table.
 5. Cite `fa2e315`. Do not restamp it.
 6. Index gist and hydrology gist: separate AnA tree. Do not restamp Pages.
-7. Push public `martialsystems/nwm_ana_2025_26`.
+7. Caption says analysis_assim tm00, not a forecast.
+8. `anaforge/scripts/sanity_anaforge.py`. Push public `martialsystems/nwm_ana_2025_26`.

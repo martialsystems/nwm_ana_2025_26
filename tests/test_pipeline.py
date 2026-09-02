@@ -11,6 +11,8 @@ def test_fixture_stage0(tmp_path: Path) -> None:
     assert report["question"] == QUESTION
     assert report["v21_citation"] == LOCKED_V21
     assert report["mixed_v21_table"] is False
+    assert report["captioned_as_forecast"] is False
+    assert report["is_tm00_analysis"] is True
     assert report["source"] == "fixture"
     assert (tmp_path / "hydrograph.png").is_file()
     assert (tmp_path / "residual_strip.png").is_file()

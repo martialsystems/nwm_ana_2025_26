@@ -2,7 +2,7 @@
 
 Question: Does operational NWM analysis-assim beat yesterday's flow on the White River in 2025 to August 2026?
 
-This tree is a new product. Frozen v2.1 science stays `fa2e315`. AnA RMSE does not enter that table. Live: AnA beat persistence at all four gages (Nora 301 vs 1,179).
+This tree is a new product. Frozen v2.1 science stays `fa2e315`. AnA RMSE does not enter that table. Live science `4fdedca`: AnA `t12z` `tm00` analysis beat persistence at all four gages (Nora 301 vs 1,179 yesterday). That does not reverse the v2.1 Anderson-only win. GraphForge pin `anaforge/` holds five refuse laws.
 
 ## Window
 
@@ -31,4 +31,4 @@ On days with finite USGS, AnA, and yesterday USGS: RMSE and MAE. AnA beats persi
 
 Allowed: AnA versus yesterday on this window; same four gages; fetch-or-stop per day; persistence is the bar; cite `fa2e315` as the frozen v2.1 parent.
 
-Banned: mixing AnA and v2.1 RMSE in one table; interpolating a missing AnA day; 2021-2024 AnA fill; HAND as a FIRM; residual as inundation; flood warning.
+Banned: mixing AnA and v2.1 RMSE in one table; interpolating a missing AnA day; 2021-2024 AnA fill; HAND as a FIRM; residual as inundation; flood warning; captioning tm00 analysis as a forecast; "NWM now wins."

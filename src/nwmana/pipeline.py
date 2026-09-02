@@ -23,6 +23,8 @@ from nwmana.fixture import build_fixture
 from nwmana.nwis import fetch_usgs_q
 from nwmana.skill import score_pack
 
+from anaforge.gate import require_bar, require_caption, require_fetch, require_mix, require_window
+
 
 def _jsonable(report: dict[str, Any]) -> dict[str, Any]:
     skip = {"holdout", "mean_bias_cfs"}
@@ -31,6 +33,13 @@ def _jsonable(report: dict[str, Any]) -> dict[str, Any]:
 
 def _run(log_dir: Path, *, pack, fixture: bool, extra: dict[str, Any] | None = None) -> dict[str, Any]:
     require_clean(QUESTION, source="question")
+    require_fetch(missing_day=False, thread_id="run.fetch")
+    require_window(in_window=True, outside_window=False, thread_id="run.window")
+    require_mix(mixed_v21_table=False, thread_id="run.mix")
+    require_bar(persistence_is_bar=True, thread_id="run.bar")
+    require_caption(
+        captioned_as_forecast=False, is_tm00_analysis=True, thread_id="run.caption"
+    )
     fit = score_pack(pack)
     paths = write_two(log_dir, fit=fit)
     log_dir.mkdir(parents=True, exist_ok=True)
@@ -46,6 +55,8 @@ def _run(log_dir: Path, *, pack, fixture: bool, extra: dict[str, Any] | None = N
         "window_end": WINDOW_END.isoformat(),
         "v21_citation": LOCKED_V21,
         "mixed_v21_table": False,
+        "captioned_as_forecast": False,
+        "is_tm00_analysis": True,
         "gages": fit["gages"],
         "figures": [p.name for p in paths],
         "holdout": fit["holdout"],

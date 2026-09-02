@@ -78,14 +78,14 @@ def write_two(log_dir: Path, *, fit: dict[str, Any]) -> list[Path]:
         write_hydrograph(
             log_dir / "hydrograph.png",
             fit=fit,
-            title=f"{NORA_ID} Nora: USGS, persistence, operational AnA",
-            subtitle="2025 to August 2026. AnA is t12z tm00. Persistence is yesterday 00060. cfs, not feet.",
+            title=f"{NORA_ID} Nora: USGS, persistence, AnA t12z tm00 analysis",
+            subtitle="2025 to August 2026. analysis_assim tm00 analysis. Persistence is yesterday 00060. cfs, not feet.",
         ),
         write_residual_strip(
             log_dir / "residual_strip.png",
             fit=fit,
             title="AnA minus USGS, not water",
-            subtitle="Same four gages as fa2e315. This strip is operational AnA, not v2.1 retro.",
+            subtitle="analysis_assim tm00 analysis, not v2.1 retro. Same four gages as fa2e315.",
         ),
     ]
     _cap(len(paths))

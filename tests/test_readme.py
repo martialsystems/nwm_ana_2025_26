@@ -12,6 +12,11 @@ def test_readme_opens_with_the_question() -> None:
     text = (REPO / "README.md").read_text(encoding="utf-8")
     body = "\n".join(text.splitlines()[1:]).lstrip()
     assert body.startswith(QUESTION)
+    assert "Operational NWM AnA (2025-01-01 to 2026-08-31, t12z tm00) beats yesterday's USGS Q" in text
+    assert "That is not the v2.1 retrospective, which only beat yesterday at Anderson." in text
+    assert "analysis_assim" in text
+    assert "NWM now wins" not in text
+    assert "1,316" not in text
     assert "03351000" in text
     assert "Anderson" in text
     assert "Centerton" in text
