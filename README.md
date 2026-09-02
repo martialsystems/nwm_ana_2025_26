@@ -2,7 +2,7 @@
 
 Does operational NWM analysis-assim beat yesterday's flow on the White River in 2025 to August 2026?
 
-Yes. On 2025-01-01 to 2026-08-31, operational AnA beat yesterday at all four gages. Nora 301 vs 1,179. Anderson 252 vs 813. Indianapolis 559 vs 1,472. Centerton 622 vs 1,770. Bias is small (-6, +7, -17, +67 cfs). Fetch-or-stop covered 608 AnA noon-UTC files.
+Yes. On 2025-01-01 to 2026-08-31, operational AnA beat yesterday at all four gages. Science `09af4c6`. Nora 301 vs 1,179. Anderson 252 vs 813. Indianapolis 559 vs 1,472. Centerton 622 vs 1,770. Bias is small (-6, +7, -17, +67 cfs). Fetch-or-stop covered 608 AnA noon-UTC files.
 
 Frozen v2.1 science stays `fa2e315`. That table is WY2019 to 2020 retrospective, Anderson-only win. This table is operational AnA `t12z` `tm00` on a later window. Same four gages. Persistence is still the bar.
 
