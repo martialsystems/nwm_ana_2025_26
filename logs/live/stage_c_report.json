@@ -1,0 +1,90 @@
+{
+  "stage": "C",
+  "fixture": false,
+  "question": "Does operational NWM analysis-assim beat yesterday's flow on the White River in 2025 to August 2026?",
+  "gage_ids": [
+    "03348000",
+    "03351000",
+    "03353000",
+    "03354000"
+  ],
+  "nora_id": "03351000",
+  "n_days": 608,
+  "source": "ana_2025_26",
+  "window_start": "2025-01-01",
+  "window_end": "2026-08-31",
+  "v21_citation": "fa2e315",
+  "mixed_v21_table": false,
+  "gages": [
+    {
+      "id": "03348000",
+      "n_days": 604,
+      "skill": {
+        "persistence": {
+          "rmse_cfs": 813.4088558986217,
+          "mae_cfs": 192.49006622516555
+        },
+        "ana": {
+          "rmse_cfs": 252.15489870550005,
+          "mae_cfs": 75.10215600433031
+        }
+      },
+      "bias_cfs": -6.220214193093367,
+      "ana_beats_persistence": true
+    },
+    {
+      "id": "03351000",
+      "n_days": 603,
+      "skill": {
+        "persistence": {
+          "rmse_cfs": 1178.9014196335206,
+          "mae_cfs": 392.5074626865672
+        },
+        "ana": {
+          "rmse_cfs": 300.6966062935227,
+          "mae_cfs": 126.87191487074297
+        }
+      },
+      "bias_cfs": 7.216647131572797,
+      "ana_beats_persistence": true
+    },
+    {
+      "id": "03353000",
+      "n_days": 604,
+      "skill": {
+        "persistence": {
+          "rmse_cfs": 1472.2500844823471,
+          "mae_cfs": 492.6291390728477
+        },
+        "ana": {
+          "rmse_cfs": 558.8103286216067,
+          "mae_cfs": 288.7079735613734
+        }
+      },
+      "bias_cfs": -17.2989190656899,
+      "ana_beats_persistence": true
+    },
+    {
+      "id": "03354000",
+      "n_days": 607,
+      "skill": {
+        "persistence": {
+          "rmse_cfs": 1769.6609546925724,
+          "mae_cfs": 688.6293245469523
+        },
+        "ana": {
+          "rmse_cfs": 622.4906254487842,
+          "mae_cfs": 249.55009386602225
+        }
+      },
+      "bias_cfs": 66.92042841034485,
+      "ana_beats_persistence": true
+    }
+  ],
+  "figures": [
+    "hydrograph.png",
+    "residual_strip.png"
+  ],
+  "n_head_days": 608,
+  "fetch_or_stop": true
+}
