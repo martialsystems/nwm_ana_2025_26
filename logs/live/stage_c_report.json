@@ -15,6 +15,8 @@
   "window_end": "2026-08-31",
   "v21_citation": "fa2e315",
   "mixed_v21_table": false,
+  "captioned_as_forecast": false,
+  "is_tm00_analysis": true,
   "gages": [
     {
       "id": "03348000",
