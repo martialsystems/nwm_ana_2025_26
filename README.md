@@ -8,7 +8,7 @@ What was scored is `analysis_assim` tm00: a cycling analysis that has seen recen
 
 Gages, upstream to downstream: **03348000 Anderson**, **03351000 Nora**, **03353000 Indianapolis**, **03354000 Centerton**. Residual is AnA minus USGS, in cfs. Noon UTC tm00 versus daily mean 00060. 2021-2024 AnA still 404.
 
-[![NWM v2.1 vs yesterday](https://img.shields.io/badge/NWM_v2.1_vs_yesterday-2e7d32?style=for-the-badge)](https://github.com/martialsystems/white_river_nwm_error) (`fa2e315`). Do not restamp it.
+[NWM v2.1 vs yesterday](https://github.com/martialsystems/white_river_nwm_error) (`fa2e315`). Do not restamp it.
 
 ![Figure 1. Nora AnA hydrograph](logs/live/hydrograph.png)
 
@@ -54,4 +54,6 @@ Do not use stock `/usr/bin/python3 -m pytest`. Live `run_live.py` exits 2 on a m
 | `src/nwmana/` | NWIS, AnA t12z tm00, skill, figures |
 | `anaforge/` | GraphForge pin: five refuse laws |
 
-[![White River Q](https://img.shields.io/badge/White_River_Q-2e7d32?style=for-the-badge)](https://gist.github.com/martialsystems/1104e5e47b8a04006ec694d289d43639) [![Open the research console](https://img.shields.io/badge/Open_the_research_console-2e7d32?style=for-the-badge)](https://martialsystems.github.io/indiana_wx_pages/)
+[White River Q](https://gist.github.com/martialsystems/1104e5e47b8a04006ec694d289d43639)
+
+Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3
