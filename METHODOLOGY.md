@@ -25,7 +25,7 @@ On days with finite USGS, AnA, and yesterday USGS: RMSE and MAE. AnA beats persi
 ## Figures
 
 1. Nora hydrograph: USGS Q, persistence, AnA. Not feet.
-2. Four-gage residual strip: mean (AnA minus USGS). Caption: not water.
+2. Four-gage RMSE bars: yesterday vs AnA. Caption: AnA wins all four. Bias stays in the table.
 
 ## Claims
 

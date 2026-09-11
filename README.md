@@ -14,9 +14,9 @@ Gages, upstream to downstream: **03348000 Anderson**, **03351000 Nora**, **03353
 
 Figure 1. Live window at Nora: USGS Q, persistence, operational AnA `t12z` `tm00` analysis. Persistence RMSE 1,179 cfs; AnA 301 cfs.
 
-![Figure 2. Residual strip](logs/live/residual_strip.png)
+![Figure 2. Yesterday vs AnA RMSE](logs/live/residual_strip.png)
 
-Figure 2. AnA minus USGS, not water. Anderson to Centerton. This is analysis_assim tm00 analysis, not v2.1 retro. Bias stays near zero except Centerton +67 cfs.
+Figure 2. RMSE contest: yesterday vs AnA at Anderson, Nora, Indianapolis, Centerton. AnA wins all four (252 vs 813, 301 vs 1,179, 559 vs 1,472, 622 vs 1,770). Bias stays in the table, not as the hero chart.
 
 ## Live skill (2025-01-01 to 2026-08-31)
 
